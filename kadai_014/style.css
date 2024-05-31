@@ -1,0 +1,36 @@
+body {
+  font-family: "Arial", "Meiryo", sans-serif; /* フォントの種類 */
+  text-align: center; /* テキストは、全て中央寄せ */
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* フォントサイズ */
+html {
+  font-size: 20px; /* フォントサイズ20px */
+}
+
+h1 {
+  font-size: 2em; /* フォントサイズ　h1は　2倍*/
+  letter-spacing: 1.2em; /* 文字間 1.2倍 */
+  text-shadow: 5px 5px 5px black; /* 影を付ける */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下に3px（カラー：rgb(115, 115, 114)）の実線を付ける */
+}
+
+/* フォントカラー */
+.skyblue {
+  color: skyblue;
+}
+
+.pink {
+  color: rgb(255, 192, 203);
+}
+
+#basic p {
+  font-weight: bold; /*child　太字 */
+}
