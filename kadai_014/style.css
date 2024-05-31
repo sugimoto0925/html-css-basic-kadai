@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-  font-size: 40px; /* フォントサイズ　h1は　2倍*/
+  font-size: 2rem; /* htmlのフォントサイズ　h1は2倍 */
   letter-spacing: 1.2em; /* 文字間 1.2倍 */
   text-shadow: 5px 5px 5px black; /* 影を付ける */
   border-bottom: 3px solid rgb(115, 115, 114); /* 下に3px（カラー：rgb(115, 115, 114)）の実線を付ける */
