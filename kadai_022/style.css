@@ -1,0 +1,68 @@
+h1, p, body { /* h1、p、body要素の上下左右余白（margin）を0 */
+  margin: 0;
+}
+p, a { /* p要素とa要素のフォントサイズを20px */
+  font-size: 20px;
+}
+header {
+  margin: 20px; /* 下の余白を20px */
+  background-color: rgb(244, 79, 79); /* 背景色を「 rgb(244, 79, 79)」 */
+  text-align: center; /* 中の要素が中央揃え */
+}
+h1 {
+  color: rgb(255, 255, 255); /* h1要素内の文字色をrgb(255, 255, 255) */
+}
+main { /* main要素内の余白を上下左右とも10px */
+  margin: 10px;
+}
+#parent {
+  display: flex; /* displayプロパティを使い、id名parentの要素をFlexコンテナ */
+  justify-content: space-between; /* 一番左と一番右のアイテムも含め、均等な間隔で配置する */
+}
+.contents {
+  border: 3px solid rgb(238, 204, 204); /* 線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲い */
+  flex-basis: 25%; /* 幅は親要素の25%にします。プロパティはwidthではなく、flex-basis */
+  padding: 10px 15px; /* 要素内の余白は上下10px、左右15px */
+  margin: 20px 0; /* 要素外の余白は上下20px、左右0 */
+  text-align: center; /* 中の要素が中央揃え */
+}
+.contents h2 {
+  font-size: 25px; /* フォントサイズを25px */
+  border-bottom: 3px dotted rgb(236, 122, 122); /* 下線（太さ3px、点線、色rgb(236, 122, 122)） */
+}
+.contents h2::before {
+  content: "⚫︎"; /* h2要素の前に「●」記号を表示 */
+  color: rgb(239, 111, 139); /* 色はrgb(239, 111, 139) */
+}
+.contents :nth-of-type(2)::first-letter {
+  font-weight: bold; /* 太字 */
+  color: rgb(97, 206, 249); /* 文字色はrgb(97, 206, 249) */
+}
+.contents img {
+  margin: 10px 0; /* marginは上下10px、左右0 */
+  width: 70%; /* 幅は70% */
+}
+footer {
+  background-color: rgb(244, 79, 79); /* 背景色はrgb(244, 79, 79) */
+  text-align: center; /* 中の要素が中央揃え */
+}
+a {
+  color: rgb(255, 255, 255); /* 文字色はrgb(255, 255, 255) */
+}
+a:visited {
+  color: rgb(193, 234, 251); /* 訪問済みリンクの文字色がrgb(193, 234, 251)に変化 */
+}
+a:hover {
+  color: rgb(245, 178, 168); /* マウスカーソルが乗ると文字色がrgb(245, 178, 168)に変化 */
+}
+@media screen and (max-width: 768px) {/* 画面幅768px以下になったら表示が変わるようにブレークポイントを設定 */
+  h2 {
+    font-size: 20px; /* h2のフォントサイズは30px */
+  }
+  p {
+    font-size: 25px; /* h2のフォントサイズは30px */
+  }
+  #parent {
+    flex-direction: column; /* parent内の要素が縦に並ぶ */
+  }
+}
